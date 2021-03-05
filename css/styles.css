@@ -1,0 +1,103 @@
+html {
+    background-color: hsl(185, 75%, 39%);
+    position: relative;
+}
+
+html::after,
+html::before {
+    content: "";
+    position: fixed;
+    display:block;
+    background-color: rgb(93, 194, 194);
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+html::after {
+    top: -100px;
+    left: -100px;
+}
+
+html::before {
+    bottom: -100px;
+    right: -100px;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.card-principal {
+    width: 300px;
+    background-color:white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card-principal__header {
+    background-image: url(../archivos/fondo-paisaje.jpg);
+    height: 110px;
+    position: relative;
+    justify-content: center;
+}
+
+.card-principal__image {
+    position:absolute;
+    bottom: 0;
+    width: 150px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    border-radius: 50%;
+    border: 3px solid whitesmoke;
+    background-color: whitesmoke;
+}
+
+.card-principal__body {
+    margin-top: 18%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 135px;
+
+}
+
+.card-principal__text {
+    margin: 0;
+    line-height: 2;
+}
+
+.card-principal__light {
+    margin-top: 0;
+    color: grey;
+    
+
+}
+
+.card-principal__footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid grey;
+}
+
+.stats {
+    text-align: center;
+    width: 100%;
+
+}
+
+.card-principal__number {
+    display: flex;
+    flex-direction:column;
+    font-weight: bold;
+    
+}
+
+.card-principal__text_light {
+    font-weight: normal;
+}
